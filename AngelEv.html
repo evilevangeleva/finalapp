@@ -1,0 +1,196 @@
+<html>
+	<head>
+	<title>Evil Ev</title>
+	<style>
+
+	
+
+/**
+	@media screen and (orientation: portrait) {
+#page{
+		position: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 200px;
+		margin-bottom: auto;
+		 
+	}
+}
+
+/* if portrait mode is detected, rotate the entire site -90 degrees to hint rotating to landscape */
+/**
+@media screen and (orientation: landscape){
+  body {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+  #page{
+		position: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 200px;
+		margin-bottom: auto;
+		 
+	}
+}
+*/
+
+
+
+
+	body{
+		background-color:#fbff91;
+	}
+	#page{
+		position: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 4%;
+		margin-bottom: auto;
+		 
+	}
+
+
+
+	#title{
+		font-size: 60px;
+		text-align: center;
+		display: block;
+		color: orange;
+font-family: 'Gloria Hallelujah', cursive;
+	}
+
+	#avatar {
+		display: block;
+    	
+    
+    /* make a square container */
+    width: 275px;
+    height: 300px;
+
+
+    /* center the image vertically and horizontally */
+   	margin-left: auto;
+   	margin-right: auto;
+
+    /* round the edges to a circle with border radius 1/2 container size */
+    border-radius: 50%;
+
+    margin-top: 40px;
+    margin-bottom: auto;
+
+      -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+     box-shadow: 0px 0px 200px 60px rgba(255,200,0, .9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+
+
+  #nextPage {
+
+
+		display: block;
+		text-align: center;
+
+		background: #e65c00;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #F9D423, orange);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #F9D423, orange); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+		  -webkit-border-radius: 28;
+		  -moz-border-radius: 28;
+		  border-radius: 28px;
+		  font-family: 'Shrikhand', cursive;
+		  color: #ffffff;
+		  font-size: 24px;
+		  padding: 10px 20px 10px 20px;
+		  text-decoration: none;
+		  width: 20%;
+		  margin-left: auto;
+		  margin-right: auto;
+
+}
+
+#nextPage:hover {
+  text-decoration: none;
+
+}
+#nextPageButton {
+
+  padding-top: 60px;
+}
+
+/* Mobile Styles */
+@media screen and (max-width:1440px){
+	body{
+		width: screen.width;
+		height: screen.height;
+	}
+
+	#nextPage{
+		width: 40%;
+		font-size: 22px;
+
+	}
+	#nextPageButton {
+
+	  	padding-top: 7%;
+	}
+	#avatar {
+		display: block;
+    
+    width: 45%;
+    height: 52%;
+    margin-top: 7%
+	}
+	   #page{
+		position: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 20%;
+		margin-bottom: 20%;
+		 
+	}
+}
+
+	</style>
+
+	<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Gloria+Hallelujah|Pacifico|Russo+One|Shrikhand" rel="stylesheet">
+
+	</head>
+
+		<body>
+			<audio src="" id="speachaudio"></audio>
+		<div id="page">
+			<div id="title" > Angel Ev </div>
+
+			<img src="eva5.jpg" id="avatar" onclick="makeSound()"></img>
+			<div id="nextPageButton">
+				<a href="EvilEv.html" id="nextPage"> Click Here You Sinner </a>
+			</div>
+		</div>
+		<script>
+
+			/**
+			    position: absolute;
+	left: 0;
+	right: 0;
+	
+	margin: auto;
+
+	font-family: 'Pacifico', cursive;
+font-family: 'Gloria Hallelujah', cursive;
+font-family: 'Shrikhand', cursive;
+font-family: 'Russo One', sans-serif;
+font-family: 'Alfa Slab One', cursive;
+	*/
+	//  <--#3498db;-->
+		function makeSound(){
+			var sound = document.getElementById("speachaudio");
+			sound.src="message2.mp3";
+			sound.play();
+		}
+		</script>
+		</body>
+</html>
